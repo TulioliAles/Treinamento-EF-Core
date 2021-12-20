@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Alura.Loja.Testes.ConsoleApp
 {
@@ -13,13 +11,32 @@ namespace Alura.Loja.Testes.ConsoleApp
             //GravarUsandoAdoNet();
             //GravarUsandoEntity();
             RecuperaProdutos();
+            ExcluirProdutos();
+            RecuperaProdutos();
+        }
+
+        private static void ExcluirProdutos()
+        {
+            using (var repo = new LojaContext())
+            {
+                IList<Produto> produtos = repo.Produtos.ToList();
+
+                foreach (var item in produtos)
+                {
+                    repo.Produtos.Remove(item);
+                }
+
+                repo.SaveChanges();
+            }
         }
 
         private static void RecuperaProdutos()
         {
             using (var repo = new LojaContext())
             {
-                List<Produto> produtos = repo.Produtos.ToList();
+                IList<Produto> produtos = repo.Produtos.ToList();
+
+                Console.WriteLine("Foram encontrados {0} produtos.", produtos.Count);
 
                 foreach (var item in produtos)
                 {

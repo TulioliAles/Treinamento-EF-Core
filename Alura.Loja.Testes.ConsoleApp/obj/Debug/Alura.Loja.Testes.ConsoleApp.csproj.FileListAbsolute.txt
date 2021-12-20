@@ -55,7 +55,6 @@ C:\Users\alessandro.tulioli\Documents\ADM\Projetos_EF_Core\Alura.Loja\Alura.Loja
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_EF_Core\Alura.Loja\Alura.Loja.Testes.ConsoleApp\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_EF_Core\Alura.Loja\Alura.Loja.Testes.ConsoleApp\bin\Debug\System.Interactive.Async.xml
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_EF_Core\Alura.Loja\Alura.Loja.Testes.ConsoleApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\alessandro.tulioli\Documents\ADM\Projetos_EF_Core\Alura.Loja\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.csproj.AssemblyReference.cache
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_EF_Core\Alura.Loja\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.csproj.CoreCompileInputs.cache
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_EF_Core\Alura.Loja\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.csproj.CopyComplete
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_EF_Core\Alura.Loja\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.exe
