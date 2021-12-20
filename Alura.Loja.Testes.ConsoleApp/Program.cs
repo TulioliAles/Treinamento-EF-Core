@@ -11,8 +11,23 @@ namespace Alura.Loja.Testes.ConsoleApp
             //GravarUsandoAdoNet();
             //GravarUsandoEntity();
             RecuperaProdutos();
-            ExcluirProdutos();
+            //ExcluirProdutos();
+            AtualizarProduto();
             RecuperaProdutos();
+        }
+
+        private static void AtualizarProduto()
+        {
+            using (var repo = new LojaContext())
+            {
+                Produto primeiroProduto = repo.Produtos.First();
+
+                primeiroProduto.Nome = "Cassino Royale 2";
+
+                repo.Produtos.Update(primeiroProduto);
+
+                repo.SaveChanges();
+            }
         }
 
         private static void ExcluirProdutos()
@@ -40,18 +55,18 @@ namespace Alura.Loja.Testes.ConsoleApp
 
                 foreach (var item in produtos)
                 {
-                    Console.WriteLine(item.Nome);
-                    Console.ReadKey();
+                    Console.WriteLine(item.Nome);       
                 }
+                Console.ReadKey();
             }
         }
 
         private static void GravarUsandoEntity()
         {
             Produto p = new Produto();
-            p.Nome = "Harry Potter e a Ordem da Fênix";
+            p.Nome = "Cassino Royale";
             p.Categoria = "Livros";
-            p.Preco = 19.89;
+            p.Preco = 39.90;
 
             using (var contexto = new LojaContext())
             {
